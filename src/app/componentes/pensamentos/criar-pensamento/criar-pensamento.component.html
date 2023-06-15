@@ -11,6 +11,15 @@
       formControlName="conteudo"
       placeholder="Digite o pensamento"
     />
+    <div
+      class="mensagem___erro"
+      *ngIf="
+        formulario.get('conteudo')?.errors &&
+        formulario.get('conteudo')?.touched
+      "
+    >
+      Pensamento é obrigatório
+    </div>
     <label for="autoria">Autoria</label>
     <input
       type="text"
@@ -19,6 +28,22 @@
       formControlName="autoria"
       placeholder="Digite o autoria"
     />
+    <div
+      class="mensagem___erro"
+      *ngIf="formulario.get('autoria')?.errors?.['required'] && formulario.get('autoria')?.touched"
+    >
+      Autoria é obrigatório
+    </div>
+    <div
+      class="mensagem___erro"
+      *ngIf="formulario.get('autoria')?.errors?.['minlength'] && formulario.get('autoria')?.touched"
+    >
+      Autoria precisa ter no mínimo 3 caracteres!
+    </div>
+    <div class="mensagem___erro"
+      *ngIf="formulario.get('autoria')?.errors?.['minusculo'] && formulario.get('autoria')?.touched">
+        Esse campo aceita apenas letras minúsculas
+    </div>
     <label for="modelo">Selecione o modelo do card:</label>
     <div class="container-radio">
       <div class="radio-modelo">
@@ -37,8 +62,10 @@
         Prévia:
         <div class="modelo modelo1 ff-roboto-mono">
           <img src="../../../../assets/imagens/modelo1.png" alt="Aspas azuis" />
-          <p class="conteudo">{{ formulario.get('conteudo')?.value }}</p>
-          <p class="autoria"><b>{{ formulario.get('autoria')?.value }}</b></p>
+          <p class="conteudo">{{ formulario.get("conteudo")?.value }}</p>
+          <p class="autoria">
+            <b>{{ formulario.get("autoria")?.value }}</b>
+          </p>
         </div>
       </div>
 
@@ -61,8 +88,10 @@
             src="../../../../assets/imagens/modelo2.png"
             alt="Aspas azuis claro"
           />
-          <p class="conteudo">{{ formulario.get('conteudo')?.value }}</p>
-          <p class="autoria"><b>{{ formulario.get('autoria')?.value }}</b></p>
+          <p class="conteudo">{{ formulario.get("conteudo")?.value }}</p>
+          <p class="autoria">
+            <b>{{ formulario.get("autoria")?.value }}</b>
+          </p>
         </div>
       </div>
 
@@ -85,13 +114,21 @@
             src="../../../../assets/imagens/modelo3.png"
             alt="Aspas verdes"
           />
-          <p class="conteudo">{{ formulario.get('conteudo')?.value }}</p>
-          <p class="autoria"><b>{{ formulario.get('autoria')?.value }}</b></p>
+          <p class="conteudo">{{ formulario.get("conteudo")?.value }}</p>
+          <p class="autoria">
+            <b>{{ formulario.get("autoria")?.value }}</b>
+          </p>
         </div>
       </div>
     </div>
     <div class="acoes">
-      <button (click)="criarPensamento()" class="botao">Salvar</button>
+      <button
+        [disabled]="!formulario.valid"
+        (click)="criarPensamento()"
+        [ngClass]="habilitarBotao()"
+      >
+        Salvar
+      </button>
       <button (click)="cancelar()" class="botao">Cancelar</button>
     </div>
   </form>
