@@ -2,33 +2,45 @@
   "pensamento": [
     {
       "id": 1,
-      "conteudo": "Que bom que você veio",
-      "autoria": "Barts",
-      "modelo": "modelo1"
-    },
-    {
-      "id": 2,
-      "conteudo": "Estudando Angular",
-      "autoria": "Dev Alura",
+      "conteudo": "Utilizar a ferramenta angular CLI para criar um projeto Angular ",
+      "autoria": "Curso Angular",
       "modelo": "modelo2"
     },
     {
       "id": 3,
-      "conteudo": " Angular é o melhor",
-      "autoria": "Nay",
+      "conteudo": "Entender como ocorre o fluxo de dados no componente",
+      "autoria": "Curso Angular",
       "modelo": "modelo3"
     },
     {
-      "conteudo": "Pensamento de teste",
-      "autoria": "Dev testando",
-      "modelo": "modelo3",
+      "conteudo": "Utilizar rotas para adicionar navegação dinâmica entre as telas da aplicação",
+      "autoria": "Curso Angular",
+      "modelo": "modelo1",
       "id": 4
     },
     {
-      "conteudo": "dwqfsdaf",
-      "autoria": "dqsdfafsa",
-      "modelo": "modelo2",
+      "conteudo": "Aprender o que são e como utilizar algumas das principais diretivas do Angular ",
+      "autoria": "Curso Angular",
+      "modelo": "modelo3",
       "id": 5
+    },
+    {
+      "conteudo": "Compreender o que são services e como utilizar injeção de dependências ",
+      "autoria": "Curso Angular",
+      "modelo": "modelo1",
+      "id": 6
+    },
+    {
+      "conteudo": "Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ...",
+      "autoria": "Dory Programadora",
+      "modelo": "modelo3",
+      "id": 7
+    },
+    {
+      "conteudo": "Realizar a comunicação cliente-servidor através do HTTPClient para fazer requisições AJAX (Get, Post, Put e Delete) ",
+      "autoria": "Curso Angular",
+      "modelo": "modelo3",
+      "id": 8
     }
   ]
 }
