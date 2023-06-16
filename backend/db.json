@@ -7,12 +7,6 @@
       "modelo": "modelo2"
     },
     {
-      "id": 3,
-      "conteudo": "       teste",
-      "autoria": "teste",
-      "modelo": "modelo3"
-    },
-    {
       "conteudo": "Utilizar rotas para adicionar navegação dinâmica entre as telas da aplicação",
       "autoria": "Curso Angular",
       "modelo": "modelo1",
