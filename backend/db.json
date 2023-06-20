@@ -4,37 +4,50 @@
       "id": 1,
       "conteudo": "Utilizar a ferramenta angular CLI para criar um projeto Angular ",
       "autoria": "Curso Angular",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": true
     },
     {
       "conteudo": "Utilizar rotas para adicionar navegação dinâmica entre as telas da aplicação",
       "autoria": "Curso Angular",
       "modelo": "modelo1",
+      "favorito": false,
       "id": 4
     },
     {
       "conteudo": "Aprender o que são e como utilizar algumas das principais diretivas do Angular ",
       "autoria": "Curso Angular",
       "modelo": "modelo3",
+      "favorito": false,
       "id": 5
     },
     {
       "conteudo": "Compreender o que são services e como utilizar injeção de dependências ",
       "autoria": "Curso Angular",
       "modelo": "modelo1",
+      "favorito": false,
       "id": 6
     },
     {
       "conteudo": "Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ... Continue a codar ...",
       "autoria": "Dory Programadora",
       "modelo": "modelo3",
+      "favorito": false,
       "id": 7
     },
     {
       "conteudo": "Realizar a comunicação cliente-servidor através do HTTPClient para fazer requisições AJAX (Get, Post, Put e Delete) ",
       "autoria": "Curso Angular",
       "modelo": "modelo3",
+      "favorito": false,
       "id": 8
+    },
+    {
+      "conteudo": "Resolver o bug você não consegue  ?esfriar a cabeça você deve.",
+      "autoria": "Mestre Yoda",
+      "modelo": "modelo1",
+      "favorito": true,
+      "id": 9
     }
   ]
 }
